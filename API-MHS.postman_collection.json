@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "29d70391-8c60-4b17-9690-d5ee0910403a",
+		"name": "API-MHS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9698824"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api-mhs/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nim\":170000,\n    \"nama\":\"golang\",\n    \"password\":\"gin-gonic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api-mhs/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nim\":170000,\n    \"password\":\"gin-gonic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api-mhs/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/forgot-password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\":\"reset\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api-mhs/forgot-password/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"forgot-password",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaW0iOjE3MDAwMH0.U2aHGDlD9zzGcj8-vtlv7fcP8iCDBXdCQkkKq-2aVUM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nim\":11111,\n    \"nama\":\"akbari\",\n    \"email\":\"akbari@gmail.com\",\n    \"alamat\":\"depok\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api-mhs/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaW0iOjE3MDAwMH0.U2aHGDlD9zzGcj8-vtlv7fcP8iCDBXdCQkkKq-2aVUM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\":\"akbari\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api-mhs/update/567",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"update",
+						"567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/delete/1233",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaW0iOjE3MDAwMH0.U2aHGDlD9zzGcj8-vtlv7fcP8iCDBXdCQkkKq-2aVUM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api-mhs/delete/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"delete",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/mahasiswa/123",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaW0iOjE3MDAwMH0.U2aHGDlD9zzGcj8-vtlv7fcP8iCDBXdCQkkKq-2aVUM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api-mhs/mahasiswa/11111",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"mahasiswa",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-mhs/mahasiswa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaW0iOjE3MDAwMH0.U2aHGDlD9zzGcj8-vtlv7fcP8iCDBXdCQkkKq-2aVUM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api-mhs/mahasiswa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-mhs",
+						"mahasiswa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
