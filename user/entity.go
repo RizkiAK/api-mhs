@@ -1,5 +1,6 @@
 package user
 
+//test
 type User struct {
 	Nim      int    `json:"nim" binding:"required"`
 	Nama     string `json:"nama" binding:"required"`
